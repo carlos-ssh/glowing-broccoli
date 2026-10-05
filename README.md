@@ -5,6 +5,8 @@ Dos cosas en un repo:
 1. **`rekordbox-mapping/`**: mapeo MIDI del MASCHINE MK1 para rekordbox 7 (CSV, documentación y plantilla de Controller Editor).
 2. **`driver/`**: primeros pasos de un driver en espacio de usuario para el MK1 en macOS Sequoia (Intel y Apple Silicon), sin kext.
 
+> **Para retomar el proyecto, lee [`PLAN.md`](PLAN.md)**: estado, datos técnicos, pasos en orden y cómo continuar.
+
 ## Estado
 
 | Parte | Estado |

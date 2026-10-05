@@ -1,0 +1,2607 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ni-controller-midi-map version="1">
+  <midi-map name="REKORDBOX" port="internal" type="Maschine">
+    <handleGroupControls/>
+    <velocitycurve>3</velocitycurve>
+    <controls>
+      <button version="1" id="Control">
+        <name>CONTROL</name>
+        <note>101</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Step">
+        <name>STEP</name>
+        <note>122</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Browse">
+        <name>BROWSE</name>
+        <note>70</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Sample">
+        <name>SAMPLING</name>
+        <note>71</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="F1">
+        <name>F1</name>
+        <note>54</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="F2">
+        <name>F2</name>
+        <note>103</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Repeat">
+        <name>NOTE REPEAT</name>
+        <note>67</note>
+        <channel>4</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Scene">
+        <name>SCENE</name>
+        <note>11</note>
+        <channel>0</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Pattern">
+        <name>PATTERN</name>
+        <note>11</note>
+        <channel>1</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Keyboard">
+        <name>KEYBOARD</name>
+        <note>12</note>
+        <channel>0</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Navigate">
+        <name>NAVIGATE</name>
+        <note>12</note>
+        <channel>1</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Duplicate">
+        <name>DUPLICATE</name>
+        <note>88</note>
+        <channel>0</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Select">
+        <name>SELECT</name>
+        <note>88</note>
+        <channel>1</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Solo">
+        <name>SOLO</name>
+        <note>20</note>
+        <channel>0</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Mute">
+        <name>MUTE</name>
+        <note>20</note>
+        <channel>1</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Loop">
+        <name>LOOP</name>
+        <note>121</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Prev.">
+        <name>◄</name>
+        <note>56</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Next">
+        <name>►</name>
+        <note>58</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Grid">
+        <name>GRID</name>
+        <note>22</note>
+        <channel>4</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">toggle</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Play">
+        <name>PLAY</name>
+        <note>71</note>
+        <channel>4</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Record">
+        <name>REC</name>
+        <note>71</note>
+        <channel>5</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <button version="1" id="Erase">
+        <name>ERASE</name>
+        <note>105</note>
+        <channel>6</channel>
+        <off>0</off>
+        <on>127</on>
+        <last>0</last>
+        <behavior onIfDown="on">gate</behavior>
+        <reaction>ondown</reaction>
+      </button>
+      <knob version="1" id="Swing">
+        <name>SWING</name>
+        <controller>3</controller>
+        <channel>6</channel>
+        <min>0</min>
+        <max>127</max>
+        <default>0</default>
+        <last>0</last>
+        <range>360</range>
+        <steps>20</steps>
+        <bipolar>off</bipolar>
+      </knob>
+      <knob version="1" id="Volume">
+        <disabled/>
+        <controller>0</controller>
+        <channel>0</channel>
+        <min>0</min>
+        <max>127</max>
+        <default>0</default>
+        <last>0</last>
+        <range>360</range>
+        <steps>20</steps>
+        <bipolar>off</bipolar>
+      </knob>
+      <knob version="1" id="Tempo">
+        <disabled/>
+        <controller>0</controller>
+        <channel>0</channel>
+        <min>0</min>
+        <max>127</max>
+        <default>0</default>
+        <last>0</last>
+        <range>360</range>
+        <steps>20</steps>
+        <bipolar>off</bipolar>
+      </knob>
+    <button version="1" id="A">
+            <controller>80</controller>
+            <channel>0</channel>
+            <off>0</off>
+            <on>127</on>
+            <last>0</last>
+            <behavior onIfDown="on">toggle</behavior>
+            <reaction>ondown</reaction>
+          </button>
+    <button version="1" id="B">
+            <controller>81</controller>
+            <channel>0</channel>
+            <off>0</off>
+            <on>127</on>
+            <last>0</last>
+            <behavior onIfDown="on">toggle</behavior>
+            <reaction>ondown</reaction>
+          </button>
+    <button version="1" id="C">
+            <controller>82</controller>
+            <channel>0</channel>
+            <off>0</off>
+            <on>127</on>
+            <last>0</last>
+            <behavior onIfDown="on">toggle</behavior>
+            <reaction>ondown</reaction>
+          </button>
+    <button version="1" id="D">
+            <controller>83</controller>
+            <channel>0</channel>
+            <off>0</off>
+            <on>127</on>
+            <last>0</last>
+            <behavior onIfDown="on">toggle</behavior>
+            <reaction>ondown</reaction>
+          </button>
+    <button version="1" id="E">
+            <controller>91</controller>
+            <channel>0</channel>
+            <off>0</off>
+            <on>127</on>
+            <last>0</last>
+            <behavior onIfDown="on">toggle</behavior>
+            <reaction>ondown</reaction>
+          </button>
+    <button version="1" id="F">
+            <controller>92</controller>
+            <channel>0</channel>
+            <off>0</off>
+            <on>127</on>
+            <last>0</last>
+            <behavior onIfDown="on">toggle</behavior>
+            <reaction>ondown</reaction>
+          </button>
+    <button version="1" id="G">
+            <controller>93</controller>
+            <channel>0</channel>
+            <off>0</off>
+            <on>127</on>
+            <last>0</last>
+            <behavior onIfDown="on">toggle</behavior>
+            <reaction>ondown</reaction>
+          </button>
+    <button version="1" id="H">
+            <controller>94</controller>
+            <channel>0</channel>
+            <off>0</off>
+            <on>127</on>
+            <last>0</last>
+            <behavior onIfDown="on">toggle</behavior>
+            <reaction>ondown</reaction>
+          </button>
+    </controls>
+    <pages>
+      <current_index>0</current_index>
+      <page name="FX1">
+        <button version="1" id="Button1">
+          <name>FX1-1On</name>
+          <note>71</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button2">
+          <name>FX1-2On</name>
+          <note>72</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button3">
+          <name>FX1-3On</name>
+          <note>73</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button4">
+          <name>FX1BeatDown</name>
+          <note>74</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button5">
+          <name>FX1BeatUp</name>
+          <note>75</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button6">
+          <name>FX1Assign.CH1</name>
+          <note>16</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">toggle</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button7">
+          <name>FX1Assign.CH2</name>
+          <note>17</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">toggle</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button8">
+          <name>FX1Assign.MASTER</name>
+          <note>20</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">toggle</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <knob version="1" id="Knob1">
+          <name>FX1-1</name>
+          <controller>2</controller>
+          <channel>4</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob2">
+          <name>FX1-2</name>
+          <controller>3</controller>
+          <channel>4</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob3">
+          <name>FX1-3</name>
+          <controller>4</controller>
+          <channel>4</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob4">
+          <name>FX1-1Select</name>
+          <controller>5</controller>
+          <channel>4</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob5">
+          <name>CFXParameterCH1</name>
+          <controller>23</controller>
+          <channel>6</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob6">
+          <name>CFXParameterCH2</name>
+          <controller>24</controller>
+          <channel>6</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob7">
+          <name>CFXParameterCH3</name>
+          <controller>25</controller>
+          <channel>6</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob8">
+          <name>CFXParameterCH4</name>
+          <controller>26</controller>
+          <channel>6</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+      </page>
+      <page name="FX2">
+        <button version="1" id="Button1">
+          <name>FX2-1On</name>
+          <note>71</note>
+          <channel>5</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button2">
+          <name>FX2-2On</name>
+          <note>72</note>
+          <channel>5</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button3">
+          <name>FX2-3On</name>
+          <note>73</note>
+          <channel>5</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button4">
+          <name>FX2BeatDown</name>
+          <note>74</note>
+          <channel>5</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button5">
+          <name>FX2BeatUp</name>
+          <note>75</note>
+          <channel>5</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button6">
+          <name>FX2Assign.CH1</name>
+          <note>16</note>
+          <channel>5</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">toggle</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button7">
+          <name>FX2Assign.CH2</name>
+          <note>17</note>
+          <channel>5</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">toggle</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button8">
+          <name>FX2Assign.MASTER</name>
+          <note>20</note>
+          <channel>5</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">toggle</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <knob version="1" id="Knob1">
+          <name>FX2-1</name>
+          <controller>2</controller>
+          <channel>5</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob2">
+          <name>FX2-2</name>
+          <controller>3</controller>
+          <channel>5</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob3">
+          <name>FX2-3</name>
+          <controller>4</controller>
+          <channel>5</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob4">
+          <name>FX2-1Select</name>
+          <controller>5</controller>
+          <channel>5</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob5">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob6">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob7">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob8">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+      </page>
+      <page name="FXSEL+MIX">
+        <button version="1" id="Button1">
+          <name>FX1-1Select.ECHO</name>
+          <note>33</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button2">
+          <name>FX1-1Select.SPIRAL</name>
+          <note>35</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button3">
+          <name>FX1-1Select.REVERB</name>
+          <note>37</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button4">
+          <name>FX1-1Select.FLANGER</name>
+          <note>38</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button5">
+          <name>FX1-1Select.PHASER</name>
+          <note>39</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button6">
+          <name>FX1-1Select.FILTER</name>
+          <note>40</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button7">
+          <name>FX1-1Select.ROLL</name>
+          <note>43</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button8">
+          <name>FX1-1Select.TRANS</name>
+          <note>41</note>
+          <channel>4</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <knob version="1" id="Knob1">
+          <name>Gain</name>
+          <controller>4</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob2">
+          <name>EQHigh</name>
+          <controller>7</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob3">
+          <name>EQMid</name>
+          <controller>11</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob4">
+          <name>EQLow</name>
+          <controller>15</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob5">
+          <name>Gain</name>
+          <controller>4</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob6">
+          <name>EQHigh</name>
+          <controller>7</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob7">
+          <name>EQMid</name>
+          <controller>11</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob8">
+          <name>EQLow</name>
+          <controller>15</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+      </page>
+      <page name="CFX TYPE">
+        <button version="1" id="Button1">
+          <name>CFX1On</name>
+          <note>0</note>
+          <channel>6</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button2">
+          <name>CFX2On</name>
+          <note>1</note>
+          <channel>6</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button3">
+          <name>CFX3On</name>
+          <note>2</note>
+          <channel>6</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button4">
+          <name>CFX4On</name>
+          <note>3</note>
+          <channel>6</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button5">
+          <name>CFX5On</name>
+          <note>4</note>
+          <channel>6</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button6">
+          <name>CFX6On</name>
+          <note>5</note>
+          <channel>6</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button7">
+          <name>Quantize</name>
+          <note>53</note>
+          <channel>0</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="Button8">
+          <name>Quantize</name>
+          <note>53</note>
+          <channel>1</channel>
+          <off>0</off>
+          <on>127</on>
+          <last>0</last>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <knob version="1" id="Knob1">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob2">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob3">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob4">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob5">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob6">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob7">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="Knob8">
+          <disabled/>
+          <controller>0</controller>
+          <channel>0</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+      </page>
+    </pages>
+    <groups>
+      <current_index>0</current_index>
+      <group name="A D1 CUE+FX">
+        <pad subtype="trigger" version="1" id="Pad1">
+          <name>PAD1_HotCue</name>
+          <note>0</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad2">
+          <name>PAD2_HotCue</name>
+          <note>1</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad3">
+          <name>PAD3_HotCue</name>
+          <note>2</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad4">
+          <name>PAD4_HotCue</name>
+          <note>3</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad5">
+          <name>PAD5_HotCue</name>
+          <note>4</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad6">
+          <name>PAD6_HotCue</name>
+          <note>5</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad7">
+          <name>PAD7_HotCue</name>
+          <note>6</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad8">
+          <name>PAD8_HotCue</name>
+          <note>7</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad9">
+          <name>PAD1_PadFx1</name>
+          <note>16</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad10">
+          <name>PAD2_PadFx1</name>
+          <note>17</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad11">
+          <name>PAD3_PadFx1</name>
+          <note>18</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad12">
+          <name>PAD4_PadFx1</name>
+          <note>19</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad13">
+          <name>PAD5_PadFx1</name>
+          <note>20</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad14">
+          <name>PAD6_PadFx1</name>
+          <note>21</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad15">
+          <name>PAD7_PadFx1</name>
+          <note>22</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad16">
+          <name>PAD8_PadFx1</name>
+          <note>23</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+      </group>
+      <group name="B D2 CUE+FX">
+        <pad subtype="trigger" version="1" id="Pad1">
+          <name>PAD1_HotCue</name>
+          <note>0</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad2">
+          <name>PAD2_HotCue</name>
+          <note>1</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad3">
+          <name>PAD3_HotCue</name>
+          <note>2</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad4">
+          <name>PAD4_HotCue</name>
+          <note>3</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad5">
+          <name>PAD5_HotCue</name>
+          <note>4</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad6">
+          <name>PAD6_HotCue</name>
+          <note>5</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad7">
+          <name>PAD7_HotCue</name>
+          <note>6</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad8">
+          <name>PAD8_HotCue</name>
+          <note>7</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad9">
+          <name>PAD1_PadFx1</name>
+          <note>16</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad10">
+          <name>PAD2_PadFx1</name>
+          <note>17</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad11">
+          <name>PAD3_PadFx1</name>
+          <note>18</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad12">
+          <name>PAD4_PadFx1</name>
+          <note>19</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad13">
+          <name>PAD5_PadFx1</name>
+          <note>20</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad14">
+          <name>PAD6_PadFx1</name>
+          <note>21</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad15">
+          <name>PAD7_PadFx1</name>
+          <note>22</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad16">
+          <name>PAD8_PadFx1</name>
+          <note>23</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+      </group>
+      <group name="C D1 JUMP+LOOP">
+        <pad subtype="trigger" version="1" id="Pad1">
+          <name>PAD1_BeatJump</name>
+          <note>32</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad2">
+          <name>PAD2_BeatJump</name>
+          <note>33</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad3">
+          <name>PAD3_BeatJump</name>
+          <note>34</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad4">
+          <name>PAD4_BeatJump</name>
+          <note>35</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad5">
+          <name>PAD5_BeatJump</name>
+          <note>36</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad6">
+          <name>PAD6_BeatJump</name>
+          <note>37</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad7">
+          <name>PAD7_BeatJump</name>
+          <note>38</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad8">
+          <name>PAD8_BeatJump</name>
+          <note>39</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad9">
+          <name>PAD1_BeatLoop</name>
+          <note>96</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad10">
+          <name>PAD2_BeatLoop</name>
+          <note>97</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad11">
+          <name>PAD3_BeatLoop</name>
+          <note>98</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad12">
+          <name>PAD4_BeatLoop</name>
+          <note>99</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad13">
+          <name>PAD5_BeatLoop</name>
+          <note>100</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad14">
+          <name>PAD6_BeatLoop</name>
+          <note>101</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad15">
+          <name>PAD7_BeatLoop</name>
+          <note>102</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad16">
+          <name>PAD8_BeatLoop</name>
+          <note>103</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+      </group>
+      <group name="D D2 JUMP+LOOP">
+        <pad subtype="trigger" version="1" id="Pad1">
+          <name>PAD1_BeatJump</name>
+          <note>32</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad2">
+          <name>PAD2_BeatJump</name>
+          <note>33</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad3">
+          <name>PAD3_BeatJump</name>
+          <note>34</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad4">
+          <name>PAD4_BeatJump</name>
+          <note>35</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad5">
+          <name>PAD5_BeatJump</name>
+          <note>36</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad6">
+          <name>PAD6_BeatJump</name>
+          <note>37</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad7">
+          <name>PAD7_BeatJump</name>
+          <note>38</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad8">
+          <name>PAD8_BeatJump</name>
+          <note>39</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad9">
+          <name>PAD1_BeatLoop</name>
+          <note>96</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad10">
+          <name>PAD2_BeatLoop</name>
+          <note>97</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad11">
+          <name>PAD3_BeatLoop</name>
+          <note>98</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad12">
+          <name>PAD4_BeatLoop</name>
+          <note>99</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad13">
+          <name>PAD5_BeatLoop</name>
+          <note>100</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad14">
+          <name>PAD6_BeatLoop</name>
+          <note>101</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad15">
+          <name>PAD7_BeatLoop</name>
+          <note>102</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad16">
+          <name>PAD8_BeatLoop</name>
+          <note>103</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+      </group>
+      <group name="E D1 FX2+DEL">
+        <pad subtype="trigger" version="1" id="Pad1">
+          <name>PAD1_PadFx2</name>
+          <note>80</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad2">
+          <name>PAD2_PadFx2</name>
+          <note>81</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad3">
+          <name>PAD3_PadFx2</name>
+          <note>82</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad4">
+          <name>PAD4_PadFx2</name>
+          <note>83</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad5">
+          <name>PAD5_PadFx2</name>
+          <note>84</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad6">
+          <name>PAD6_PadFx2</name>
+          <note>85</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad7">
+          <name>PAD7_PadFx2</name>
+          <note>86</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad8">
+          <name>PAD8_PadFx2</name>
+          <note>87</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad9">
+          <name>PAD1_HotCue+Shift</name>
+          <note>0</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad10">
+          <name>PAD2_HotCue+Shift</name>
+          <note>1</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad11">
+          <name>PAD3_HotCue+Shift</name>
+          <note>2</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad12">
+          <name>PAD4_HotCue+Shift</name>
+          <note>3</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad13">
+          <name>PAD5_HotCue+Shift</name>
+          <note>4</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad14">
+          <name>PAD6_HotCue+Shift</name>
+          <note>5</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad15">
+          <name>PAD7_HotCue+Shift</name>
+          <note>6</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad16">
+          <name>PAD8_HotCue+Shift</name>
+          <note>7</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+      </group>
+      <group name="F D2 FX2+DEL">
+        <pad subtype="trigger" version="1" id="Pad1">
+          <name>PAD1_PadFx2</name>
+          <note>80</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad2">
+          <name>PAD2_PadFx2</name>
+          <note>81</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad3">
+          <name>PAD3_PadFx2</name>
+          <note>82</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad4">
+          <name>PAD4_PadFx2</name>
+          <note>83</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad5">
+          <name>PAD5_PadFx2</name>
+          <note>84</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad6">
+          <name>PAD6_PadFx2</name>
+          <note>85</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad7">
+          <name>PAD7_PadFx2</name>
+          <note>86</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad8">
+          <name>PAD8_PadFx2</name>
+          <note>87</note>
+          <channel>9</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad9">
+          <name>PAD1_HotCue+Shift</name>
+          <note>0</note>
+          <channel>10</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad10">
+          <name>PAD2_HotCue+Shift</name>
+          <note>1</note>
+          <channel>10</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad11">
+          <name>PAD3_HotCue+Shift</name>
+          <note>2</note>
+          <channel>10</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad12">
+          <name>PAD4_HotCue+Shift</name>
+          <note>3</note>
+          <channel>10</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad13">
+          <name>PAD5_HotCue+Shift</name>
+          <note>4</note>
+          <channel>10</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad14">
+          <name>PAD6_HotCue+Shift</name>
+          <note>5</note>
+          <channel>10</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad15">
+          <name>PAD7_HotCue+Shift</name>
+          <note>6</note>
+          <channel>10</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad16">
+          <name>PAD8_HotCue+Shift</name>
+          <note>7</note>
+          <channel>10</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+      </group>
+      <group name="G SAMPLER PLAY">
+        <pad subtype="trigger" version="1" id="Pad1">
+          <name>PAD1_Sampler</name>
+          <note>48</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad2">
+          <name>PAD2_Sampler</name>
+          <note>49</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad3">
+          <name>PAD3_Sampler</name>
+          <note>50</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad4">
+          <name>PAD4_Sampler</name>
+          <note>51</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad5">
+          <name>PAD5_Sampler</name>
+          <note>52</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad6">
+          <name>PAD6_Sampler</name>
+          <note>53</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad7">
+          <name>PAD7_Sampler</name>
+          <note>54</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad8">
+          <name>PAD8_Sampler</name>
+          <note>55</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad9">
+          <name>PAD9_Sampler</name>
+          <note>56</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad10">
+          <name>PAD10_Sampler</name>
+          <note>57</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad11">
+          <name>PAD11_Sampler</name>
+          <note>58</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad12">
+          <name>PAD12_Sampler</name>
+          <note>59</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad13">
+          <name>PAD13_Sampler</name>
+          <note>60</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad14">
+          <name>PAD14_Sampler</name>
+          <note>61</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad15">
+          <name>PAD15_Sampler</name>
+          <note>62</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad16">
+          <name>PAD16_Sampler</name>
+          <note>63</note>
+          <channel>7</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+      </group>
+      <group name="H SAMPLER STOP">
+        <pad subtype="trigger" version="1" id="Pad1">
+          <name>PAD1_Sampler+Shift</name>
+          <note>48</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad2">
+          <name>PAD2_Sampler+Shift</name>
+          <note>49</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad3">
+          <name>PAD3_Sampler+Shift</name>
+          <note>50</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad4">
+          <name>PAD4_Sampler+Shift</name>
+          <note>51</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad5">
+          <name>PAD5_Sampler+Shift</name>
+          <note>52</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad6">
+          <name>PAD6_Sampler+Shift</name>
+          <note>53</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad7">
+          <name>PAD7_Sampler+Shift</name>
+          <note>54</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad8">
+          <name>PAD8_Sampler+Shift</name>
+          <note>55</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad9">
+          <name>PAD9_Sampler+Shift</name>
+          <note>56</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad10">
+          <name>PAD10_Sampler+Shift</name>
+          <note>57</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad11">
+          <name>PAD11_Sampler+Shift</name>
+          <note>58</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad12">
+          <name>PAD12_Sampler+Shift</name>
+          <note>59</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad13">
+          <name>PAD13_Sampler+Shift</name>
+          <note>60</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad14">
+          <name>PAD14_Sampler+Shift</name>
+          <note>61</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad15">
+          <name>PAD15_Sampler+Shift</name>
+          <note>62</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+        <pad subtype="trigger" version="1" id="Pad16">
+          <name>PAD16_Sampler+Shift</name>
+          <note>63</note>
+          <channel>8</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <last>0</last>
+          <lastExt>0</lastExt>
+          <behavior onIfDown="on">gate</behavior>
+          <reaction>ondown</reaction>
+        </pad>
+      </group>
+    </groups>
+  </midi-map>
+</ni-controller-midi-map>

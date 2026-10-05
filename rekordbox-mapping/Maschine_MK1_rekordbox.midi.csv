@@ -1,0 +1,217 @@
+@file,1,Maschine Controller
+#name,function,type,input,deck1,deck2,deck3,deck4,output,deck1,deck2,deck3,deck4,option,comment
+,,,,,,,,,,,,,,
+# Browser,,,,,,,,,,,,,,
+BrowseUp,BrowseUp,Button,9638,,,,,,,,,,,TRANSPORTE < - subir en la biblioteca
+BrowseDown,BrowseDown,Button,963A,,,,,,,,,,,TRANSPORTE > - bajar en la biblioteca
+Forward,Forward,Button,9679,,,,,,,,,,,LOOP - abrir carpeta / entrar
+Load,Load,Button,,9646,9647,9648,9649,,,,,,,BROWSE = cargar en Deck 1 / SAMPLING = cargar en Deck 2 (doble clic = instant doubles)
+Back,Back,Button,9665,,,,,,,,,,,CONTROL - atras / cerrar carpeta
+SwitchActiveWindow,SwitchActiveWindow,Button,967A,,,,,,,,,,,STEP - BROWSE VIEW (navegador a pantalla completa)
+PlayPausePreview,PlayPausePreview,Button,9636,,,,,,,,,,,F1 - preview del track seleccionado
+AddToTagList,AddToTagList,Button,9667,,,,,,,,,,,F2 - agregar track a la Tag List
+,,,,,,,,,,,,,,
+# Deck,,,,,,,,,,,,,,
+PlayPause,PlayPause,Button,900B,0,1,2,3,900B,0,1,2,3,Fast;Priority=50,SCENE = Deck 1 / PATTERN = Deck 2 - Play/Pause
+Cue,Cue,Button,900C,0,1,2,3,900C,0,1,2,3,Fast;Priority=50,KEYBOARD = Deck 1 / NAVIGATE = Deck 2 - Cue
+Sync,Sync,Button,9058,0,1,2,3,9058,0,1,2,3,Blink=600,DUPLICATE = Deck 1 / SELECT = Deck 2 - Beat Sync
+4BeatLoop,4BeatLoop,Button,9014,0,1,2,3,9014,0,1,2,3,Fast,SOLO = Deck 1 / MUTE = Deck 2 - Auto loop 4 beats on/off
+Quantize,Quantize,Button,9035,0,1,2,3,9035,0,1,2,3,,Pagina de knobs 4 - Boton 7 = Deck 1 / Boton 8 = Deck 2 - Quantize
+,,,,,,,,,,,,,,
+# Mixer,,,,,,,,,,,,,,
+Gain,Gain,KnobSlider,B004,0,1,2,3,,,,,,Fast,Pagina de knobs 3 - Knob 1 = Deck 1 / Knob 5 = Deck 2 - Gain (trim)
+EQHigh,EQHigh,KnobSlider,B007,0,1,2,3,,,,,,Fast,Pagina de knobs 3 - Knob 2 = Deck 1 / Knob 6 = Deck 2 - EQ High
+EQMid,EQMid,KnobSlider,B00B,0,1,2,3,,,,,,Fast,Pagina de knobs 3 - Knob 3 = Deck 1 / Knob 7 = Deck 2 - EQ Mid
+EQLow,EQLow,KnobSlider,B00F,0,1,2,3,,,,,,Fast,Pagina de knobs 3 - Knob 4 = Deck 1 / Knob 8 = Deck 2 - EQ Low
+SamplerVolume,SamplerVolume,KnobSlider,B603,,,,,,,,,,,Knob SWING (master) - volumen del sampler
+SamplerCue,SamplerCue,Button,9669,,,,,9669,,,,,,ERASE - sampler a los audifonos (cue)
+,,,,,,,,,,,,,,
+# SoundColorFX,,,,,,,,,,,,,,
+CFXParameterCH1,CFXParameterCH1,KnobSlider,B617,,,,,,,,,,Fast,Pagina de knobs 1 - Knob 5 - Color FX canal 1 (centro = 64)
+CFXParameterCH2,CFXParameterCH2,KnobSlider,B618,,,,,,,,,,Fast,Pagina de knobs 1 - Knob 6 - Color FX canal 2 (centro = 64)
+CFXParameterCH3,CFXParameterCH3,KnobSlider,B619,,,,,,,,,,Fast,Pagina de knobs 1 - Knob 7 - Color FX canal 3 (centro = 64)
+CFXParameterCH4,CFXParameterCH4,KnobSlider,B61A,,,,,,,,,,Fast,Pagina de knobs 1 - Knob 8 - Color FX canal 4 (centro = 64)
+CFX1On,CFX1On,Button,9600,,,,,9600,,,,,Fast,Pagina de knobs 4 - Boton 1 - Color FX SPACE on/off
+CFX2On,CFX2On,Button,9601,,,,,9601,,,,,Fast,Pagina de knobs 4 - Boton 2 - Color FX D-ECHO on/off
+CFX3On,CFX3On,Button,9602,,,,,9602,,,,,Fast,Pagina de knobs 4 - Boton 3 - Color FX CRUSH on/off
+CFX4On,CFX4On,Button,9603,,,,,9603,,,,,Fast,Pagina de knobs 4 - Boton 4 - Color FX PITCH on/off
+CFX5On,CFX5On,Button,9604,,,,,9604,,,,,Fast,Pagina de knobs 4 - Boton 5 - Color FX NOISE on/off
+CFX6On,CFX6On,Button,9605,,,,,9605,,,,,Fast,Pagina de knobs 4 - Boton 6 - Color FX FILTER on/off
+,,,,,,,,,,,,,,
+# Effect FX1,,,,,,,,,,,,,,
+FX1-1,FX1-1,KnobSlider,B402,,,,,,,,,,,Pagina de knobs 1 - Knob 1 - FX1 slot 1 level/depth
+FX1-2,FX1-2,KnobSlider,B403,,,,,,,,,,,Pagina de knobs 1 - Knob 2 - FX1 slot 2 (modo multi)
+FX1-3,FX1-3,KnobSlider,B404,,,,,,,,,,,Pagina de knobs 1 - Knob 3 - FX1 slot 3 (modo multi)
+FX1-1Select,FX1-1Select,KnobSlider,B405,,,,,,,,,,,Pagina de knobs 1 - Knob 4 - selector de efecto por knob (truco: Button->KnobSlider)
+FX1-1On,FX1-1On,Button,9447,,,,,9447,,,,,,Pagina de knobs 1 - Boton 1 (y PLAY) - FX1 slot 1 on/off
+FX1-2On,FX1-2On,Button,9448,,,,,9448,,,,,,Pagina de knobs 1 - Boton 2 - FX1 slot 2 on/off
+FX1-3On,FX1-3On,Button,9449,,,,,9449,,,,,,Pagina de knobs 1 - Boton 3 - FX1 slot 3 on/off
+FX1BeatDown,FX1BeatDown,Button,944A,,,,,944A,,,,,,Pagina de knobs 1 - Boton 4 - FX1 beat <
+FX1BeatUp,FX1BeatUp,Button,944B,,,,,944B,,,,,,Pagina de knobs 1 - Boton 5 - FX1 beat >
+FX1ReleaseFXOn,FX1ReleaseFXOn,Button,9443,,,,,9443,,,,,Fast,NOTE REPEAT - Release FX (momentaneo)
+FX1Assign.CH1,,Button,9410,,,,,,,,,,,Pagina de knobs 1 - Boton 6 - asignar FX1 a CH1 (boton en modo Toggle)
+FX1Assign.CH2,,Button,9411,,,,,,,,,,,Pagina de knobs 1 - Boton 7 - asignar FX1 a CH2 (boton en modo Toggle)
+FX1Assign.MASTER,,Button,9414,,,,,,,,,,,Pagina de knobs 1 - Boton 8 - asignar FX1 a MASTER (boton en modo Toggle)
+FX1Assign.SAMPLER,,Button,9416,,,,,,,,,,,GRID - asignar FX1 a SAMPLER (boton en modo Toggle)
+FX1-1Select.DELAY,DELAY,Button,9420,,,,,,,,,,,seleccion directa de FX1: DELAY
+FX1-1Select.ECHO,ECHO,Button,9421,,,,,,,,,,,Pagina de knobs 3 - Boton 1 - seleccion directa de FX1: ECHO
+FX1-1Select.LOWCUTECHO,LOWCUTECHO,Button,9422,,,,,,,,,,,seleccion directa de FX1: LOWCUTECHO
+FX1-1Select.SPIRAL,SPIRAL,Button,9423,,,,,,,,,,,Pagina de knobs 3 - Boton 2 - seleccion directa de FX1: SPIRAL
+FX1-1Select.HELIX,HELIX,Button,9424,,,,,,,,,,,seleccion directa de FX1: HELIX
+FX1-1Select.REVERB,REVERB,Button,9425,,,,,,,,,,,Pagina de knobs 3 - Boton 3 - seleccion directa de FX1: REVERB
+FX1-1Select.FLANGER,FLANGER,Button,9426,,,,,,,,,,,Pagina de knobs 3 - Boton 4 - seleccion directa de FX1: FLANGER
+FX1-1Select.PHASER,PHASER,Button,9427,,,,,,,,,,,Pagina de knobs 3 - Boton 5 - seleccion directa de FX1: PHASER
+FX1-1Select.FILTER,FILTER,Button,9428,,,,,,,,,,,Pagina de knobs 3 - Boton 6 - seleccion directa de FX1: FILTER
+FX1-1Select.TRANS,TRANS,Button,9429,,,,,,,,,,,Pagina de knobs 3 - Boton 8 - seleccion directa de FX1: TRANS
+FX1-1Select.PITCH,PITCH,Button,942A,,,,,,,,,,,seleccion directa de FX1: PITCH
+FX1-1Select.ROLL,ROLL,Button,942B,,,,,,,,,,,Pagina de knobs 3 - Boton 7 - seleccion directa de FX1: ROLL
+FX1-1Select.MOBIUSSAW,MOBIUSSAW,Button,942C,,,,,,,,,,,seleccion directa de FX1: MOBIUSSAW
+FX1-1Select.MOBIUSTRI,MOBIUSTRI,Button,942D,,,,,,,,,,,seleccion directa de FX1: MOBIUSTRI
+,,,,,,,,,,,,,,
+# Effect FX2,,,,,,,,,,,,,,
+FX2-1,FX2-1,KnobSlider,B502,,,,,,,,,,,Pagina de knobs 2 - Knob 1 - FX2 slot 1 level/depth
+FX2-2,FX2-2,KnobSlider,B503,,,,,,,,,,,Pagina de knobs 2 - Knob 2 - FX2 slot 2 (modo multi)
+FX2-3,FX2-3,KnobSlider,B504,,,,,,,,,,,Pagina de knobs 2 - Knob 3 - FX2 slot 3 (modo multi)
+FX2-1Select,FX2-1Select,KnobSlider,B505,,,,,,,,,,,Pagina de knobs 2 - Knob 4 - selector de efecto por knob (truco: Button->KnobSlider)
+FX2-1On,FX2-1On,Button,9547,,,,,9547,,,,,,Pagina de knobs 2 - Boton 1 (y REC) - FX2 slot 1 on/off
+FX2-2On,FX2-2On,Button,9548,,,,,9548,,,,,,Pagina de knobs 2 - Boton 2 - FX2 slot 2 on/off
+FX2-3On,FX2-3On,Button,9549,,,,,9549,,,,,,Pagina de knobs 2 - Boton 3 - FX2 slot 3 on/off
+FX2BeatDown,FX2BeatDown,Button,954A,,,,,954A,,,,,,Pagina de knobs 2 - Boton 4 - FX2 beat <
+FX2BeatUp,FX2BeatUp,Button,954B,,,,,954B,,,,,,Pagina de knobs 2 - Boton 5 - FX2 beat >
+FX2ReleaseFXOn,FX2ReleaseFXOn,Button,9543,,,,,9543,,,,,Fast,RESERVADO - Release FX del FX2
+FX2Assign.CH1,,Button,9510,,,,,,,,,,,Pagina de knobs 2 - Boton 6 - asignar FX2 a CH1 (boton en modo Toggle)
+FX2Assign.CH2,,Button,9511,,,,,,,,,,,Pagina de knobs 2 - Boton 7 - asignar FX2 a CH2 (boton en modo Toggle)
+FX2Assign.MASTER,,Button,9514,,,,,,,,,,,Pagina de knobs 2 - Boton 8 - asignar FX2 a MASTER (boton en modo Toggle)
+FX2Assign.SAMPLER,,Button,9516,,,,,,,,,,,RESERVADO - asignar FX2 a SAMPLER (boton en modo Toggle)
+FX2-1Select.DELAY,DELAY,Button,9520,,,,,,,,,,,seleccion directa de FX2: DELAY
+FX2-1Select.ECHO,ECHO,Button,9521,,,,,,,,,,,seleccion directa de FX2: ECHO
+FX2-1Select.LOWCUTECHO,LOWCUTECHO,Button,9522,,,,,,,,,,,seleccion directa de FX2: LOWCUTECHO
+FX2-1Select.SPIRAL,SPIRAL,Button,9523,,,,,,,,,,,seleccion directa de FX2: SPIRAL
+FX2-1Select.HELIX,HELIX,Button,9524,,,,,,,,,,,seleccion directa de FX2: HELIX
+FX2-1Select.REVERB,REVERB,Button,9525,,,,,,,,,,,seleccion directa de FX2: REVERB
+FX2-1Select.FLANGER,FLANGER,Button,9526,,,,,,,,,,,seleccion directa de FX2: FLANGER
+FX2-1Select.PHASER,PHASER,Button,9527,,,,,,,,,,,seleccion directa de FX2: PHASER
+FX2-1Select.FILTER,FILTER,Button,9528,,,,,,,,,,,seleccion directa de FX2: FILTER
+FX2-1Select.TRANS,TRANS,Button,9529,,,,,,,,,,,seleccion directa de FX2: TRANS
+FX2-1Select.PITCH,PITCH,Button,952A,,,,,,,,,,,seleccion directa de FX2: PITCH
+FX2-1Select.ROLL,ROLL,Button,952B,,,,,,,,,,,seleccion directa de FX2: ROLL
+FX2-1Select.MOBIUSSAW,MOBIUSSAW,Button,952C,,,,,,,,,,,seleccion directa de FX2: MOBIUSSAW
+FX2-1Select.MOBIUSTRI,MOBIUSTRI,Button,952D,,,,,,,,,,,seleccion directa de FX2: MOBIUSTRI
+,,,,,,,,,,,,,,
+# Performance Pads,,,,,,,,,,,,,,
+PAD1_HotCue,PAD1_HotCue,Pad,9000,7,9,11,13,9000,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 1 - HOT CUE 1
+PAD1_HotCue+Shift,PAD1_HotCue+Shift,Pad,9000,8,10,12,14,9000,8,10,12,14,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 9 - BORRAR HOT CUE 1
+PAD2_HotCue,PAD2_HotCue,Pad,9001,7,9,11,13,9001,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 2 - HOT CUE 2
+PAD2_HotCue+Shift,PAD2_HotCue+Shift,Pad,9001,8,10,12,14,9001,8,10,12,14,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 10 - BORRAR HOT CUE 2
+PAD3_HotCue,PAD3_HotCue,Pad,9002,7,9,11,13,9002,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 3 - HOT CUE 3
+PAD3_HotCue+Shift,PAD3_HotCue+Shift,Pad,9002,8,10,12,14,9002,8,10,12,14,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 11 - BORRAR HOT CUE 3
+PAD4_HotCue,PAD4_HotCue,Pad,9003,7,9,11,13,9003,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 4 - HOT CUE 4
+PAD4_HotCue+Shift,PAD4_HotCue+Shift,Pad,9003,8,10,12,14,9003,8,10,12,14,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 12 - BORRAR HOT CUE 4
+PAD5_HotCue,PAD5_HotCue,Pad,9004,7,9,11,13,9004,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 5 - HOT CUE 5
+PAD5_HotCue+Shift,PAD5_HotCue+Shift,Pad,9004,8,10,12,14,9004,8,10,12,14,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 13 - BORRAR HOT CUE 5
+PAD6_HotCue,PAD6_HotCue,Pad,9005,7,9,11,13,9005,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 6 - HOT CUE 6
+PAD6_HotCue+Shift,PAD6_HotCue+Shift,Pad,9005,8,10,12,14,9005,8,10,12,14,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 14 - BORRAR HOT CUE 6
+PAD7_HotCue,PAD7_HotCue,Pad,9006,7,9,11,13,9006,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 7 - HOT CUE 7
+PAD7_HotCue+Shift,PAD7_HotCue+Shift,Pad,9006,8,10,12,14,9006,8,10,12,14,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 15 - BORRAR HOT CUE 7
+PAD8_HotCue,PAD8_HotCue,Pad,9007,7,9,11,13,9007,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 8 - HOT CUE 8
+PAD8_HotCue+Shift,PAD8_HotCue+Shift,Pad,9007,8,10,12,14,9007,8,10,12,14,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 16 - BORRAR HOT CUE 8
+PAD1_PadFx1,PAD1_PadFx1,Pad,9010,7,9,11,13,9010,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 9 - PAD FX 1 slot 1 (momentaneo)
+PAD2_PadFx1,PAD2_PadFx1,Pad,9011,7,9,11,13,9011,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 10 - PAD FX 1 slot 2 (momentaneo)
+PAD3_PadFx1,PAD3_PadFx1,Pad,9012,7,9,11,13,9012,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 11 - PAD FX 1 slot 3 (momentaneo)
+PAD4_PadFx1,PAD4_PadFx1,Pad,9013,7,9,11,13,9013,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 12 - PAD FX 1 slot 4 (momentaneo)
+PAD5_PadFx1,PAD5_PadFx1,Pad,9014,7,9,11,13,9014,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 13 - PAD FX 1 slot 5 (momentaneo)
+PAD6_PadFx1,PAD6_PadFx1,Pad,9015,7,9,11,13,9015,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 14 - PAD FX 1 slot 6 (momentaneo)
+PAD7_PadFx1,PAD7_PadFx1,Pad,9016,7,9,11,13,9016,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 15 - PAD FX 1 slot 7 (momentaneo)
+PAD8_PadFx1,PAD8_PadFx1,Pad,9017,7,9,11,13,9017,7,9,11,13,Fast,Grupo A (Deck 1) / B (Deck 2) - Pad 16 - PAD FX 1 slot 8 (momentaneo)
+PAD1_BeatJump,PAD1_BeatJump,Pad,9020,7,9,11,13,9020,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 1 - BEAT JUMP <1 (segun rango activo)
+PAD2_BeatJump,PAD2_BeatJump,Pad,9021,7,9,11,13,9021,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 2 - BEAT JUMP >1 (segun rango activo)
+PAD3_BeatJump,PAD3_BeatJump,Pad,9022,7,9,11,13,9022,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 3 - BEAT JUMP <2 (segun rango activo)
+PAD4_BeatJump,PAD4_BeatJump,Pad,9023,7,9,11,13,9023,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 4 - BEAT JUMP >2 (segun rango activo)
+PAD5_BeatJump,PAD5_BeatJump,Pad,9024,7,9,11,13,9024,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 5 - BEAT JUMP <4 (segun rango activo)
+PAD6_BeatJump,PAD6_BeatJump,Pad,9025,7,9,11,13,9025,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 6 - BEAT JUMP >4 (segun rango activo)
+PAD7_BeatJump,PAD7_BeatJump,Pad,9026,7,9,11,13,9026,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 7 - BEAT JUMP <8 (segun rango activo)
+PAD8_BeatJump,PAD8_BeatJump,Pad,9027,7,9,11,13,9027,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 8 - BEAT JUMP >8 (segun rango activo)
+PAD1_BeatLoop,PAD1_BeatLoop,Pad,9060,7,9,11,13,9060,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 9 - BEAT LOOP slot 1 (segun rango activo)
+PAD2_BeatLoop,PAD2_BeatLoop,Pad,9061,7,9,11,13,9061,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 10 - BEAT LOOP slot 2 (segun rango activo)
+PAD3_BeatLoop,PAD3_BeatLoop,Pad,9062,7,9,11,13,9062,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 11 - BEAT LOOP slot 3 (segun rango activo)
+PAD4_BeatLoop,PAD4_BeatLoop,Pad,9063,7,9,11,13,9063,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 12 - BEAT LOOP slot 4 (segun rango activo)
+PAD5_BeatLoop,PAD5_BeatLoop,Pad,9064,7,9,11,13,9064,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 13 - BEAT LOOP slot 5 (segun rango activo)
+PAD6_BeatLoop,PAD6_BeatLoop,Pad,9065,7,9,11,13,9065,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 14 - BEAT LOOP slot 6 (segun rango activo)
+PAD7_BeatLoop,PAD7_BeatLoop,Pad,9066,7,9,11,13,9066,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 15 - BEAT LOOP slot 7 (segun rango activo)
+PAD8_BeatLoop,PAD8_BeatLoop,Pad,9067,7,9,11,13,9067,7,9,11,13,Fast,Grupo C (Deck 1) / D (Deck 2) - Pad 16 - BEAT LOOP slot 8 (segun rango activo)
+PAD1_PadFx2,PAD1_PadFx2,Pad,9050,7,9,11,13,9050,7,9,11,13,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 1 - PAD FX 2 slot 1 (momentaneo)
+PAD2_PadFx2,PAD2_PadFx2,Pad,9051,7,9,11,13,9051,7,9,11,13,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 2 - PAD FX 2 slot 2 (momentaneo)
+PAD3_PadFx2,PAD3_PadFx2,Pad,9052,7,9,11,13,9052,7,9,11,13,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 3 - PAD FX 2 slot 3 (momentaneo)
+PAD4_PadFx2,PAD4_PadFx2,Pad,9053,7,9,11,13,9053,7,9,11,13,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 4 - PAD FX 2 slot 4 (momentaneo)
+PAD5_PadFx2,PAD5_PadFx2,Pad,9054,7,9,11,13,9054,7,9,11,13,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 5 - PAD FX 2 slot 5 (momentaneo)
+PAD6_PadFx2,PAD6_PadFx2,Pad,9055,7,9,11,13,9055,7,9,11,13,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 6 - PAD FX 2 slot 6 (momentaneo)
+PAD7_PadFx2,PAD7_PadFx2,Pad,9056,7,9,11,13,9056,7,9,11,13,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 7 - PAD FX 2 slot 7 (momentaneo)
+PAD8_PadFx2,PAD8_PadFx2,Pad,9057,7,9,11,13,9057,7,9,11,13,Fast,Grupo E (Deck 1) / F (Deck 2) - Pad 8 - PAD FX 2 slot 8 (momentaneo)
+,,,,,,,,,,,,,,
+# Sampler Pads,,,,,,,,,,,,,,
+PAD1_Sampler,PAD1_Sampler,Pad,9030,7,9,11,13,9030,7,9,11,13,Fast,Grupo G - Pad 1 - SAMPLER slot 1 play (banco activo)
+PAD2_Sampler,PAD2_Sampler,Pad,9031,7,9,11,13,9031,7,9,11,13,Fast,Grupo G - Pad 2 - SAMPLER slot 2 play (banco activo)
+PAD3_Sampler,PAD3_Sampler,Pad,9032,7,9,11,13,9032,7,9,11,13,Fast,Grupo G - Pad 3 - SAMPLER slot 3 play (banco activo)
+PAD4_Sampler,PAD4_Sampler,Pad,9033,7,9,11,13,9033,7,9,11,13,Fast,Grupo G - Pad 4 - SAMPLER slot 4 play (banco activo)
+PAD5_Sampler,PAD5_Sampler,Pad,9034,7,9,11,13,9034,7,9,11,13,Fast,Grupo G - Pad 5 - SAMPLER slot 5 play (banco activo)
+PAD6_Sampler,PAD6_Sampler,Pad,9035,7,9,11,13,9035,7,9,11,13,Fast,Grupo G - Pad 6 - SAMPLER slot 6 play (banco activo)
+PAD7_Sampler,PAD7_Sampler,Pad,9036,7,9,11,13,9036,7,9,11,13,Fast,Grupo G - Pad 7 - SAMPLER slot 7 play (banco activo)
+PAD8_Sampler,PAD8_Sampler,Pad,9037,7,9,11,13,9037,7,9,11,13,Fast,Grupo G - Pad 8 - SAMPLER slot 8 play (banco activo)
+PAD9_Sampler,PAD9_Sampler,Pad,9038,7,9,11,13,9038,7,9,11,13,Fast,Grupo G - Pad 9 - SAMPLER slot 9 play (banco activo)
+PAD10_Sampler,PAD10_Sampler,Pad,9039,7,9,11,13,9039,7,9,11,13,Fast,Grupo G - Pad 10 - SAMPLER slot 10 play (banco activo)
+PAD11_Sampler,PAD11_Sampler,Pad,903A,7,9,11,13,903A,7,9,11,13,Fast,Grupo G - Pad 11 - SAMPLER slot 11 play (banco activo)
+PAD12_Sampler,PAD12_Sampler,Pad,903B,7,9,11,13,903B,7,9,11,13,Fast,Grupo G - Pad 12 - SAMPLER slot 12 play (banco activo)
+PAD13_Sampler,PAD13_Sampler,Pad,903C,7,9,11,13,903C,7,9,11,13,Fast,Grupo G - Pad 13 - SAMPLER slot 13 play (banco activo)
+PAD14_Sampler,PAD14_Sampler,Pad,903D,7,9,11,13,903D,7,9,11,13,Fast,Grupo G - Pad 14 - SAMPLER slot 14 play (banco activo)
+PAD15_Sampler,PAD15_Sampler,Pad,903E,7,9,11,13,903E,7,9,11,13,Fast,Grupo G - Pad 15 - SAMPLER slot 15 play (banco activo)
+PAD16_Sampler,PAD16_Sampler,Pad,903F,7,9,11,13,903F,7,9,11,13,Fast,Grupo G - Pad 16 - SAMPLER slot 16 play (banco activo)
+PAD1_Sampler+Shift,PAD1_Sampler+Shift,Pad,9030,8,10,12,14,9030,8,10,12,14,Fast,Grupo H - Pad 1 - SAMPLER slot 1 stop
+PAD2_Sampler+Shift,PAD2_Sampler+Shift,Pad,9031,8,10,12,14,9031,8,10,12,14,Fast,Grupo H - Pad 2 - SAMPLER slot 2 stop
+PAD3_Sampler+Shift,PAD3_Sampler+Shift,Pad,9032,8,10,12,14,9032,8,10,12,14,Fast,Grupo H - Pad 3 - SAMPLER slot 3 stop
+PAD4_Sampler+Shift,PAD4_Sampler+Shift,Pad,9033,8,10,12,14,9033,8,10,12,14,Fast,Grupo H - Pad 4 - SAMPLER slot 4 stop
+PAD5_Sampler+Shift,PAD5_Sampler+Shift,Pad,9034,8,10,12,14,9034,8,10,12,14,Fast,Grupo H - Pad 5 - SAMPLER slot 5 stop
+PAD6_Sampler+Shift,PAD6_Sampler+Shift,Pad,9035,8,10,12,14,9035,8,10,12,14,Fast,Grupo H - Pad 6 - SAMPLER slot 6 stop
+PAD7_Sampler+Shift,PAD7_Sampler+Shift,Pad,9036,8,10,12,14,9036,8,10,12,14,Fast,Grupo H - Pad 7 - SAMPLER slot 7 stop
+PAD8_Sampler+Shift,PAD8_Sampler+Shift,Pad,9037,8,10,12,14,9037,8,10,12,14,Fast,Grupo H - Pad 8 - SAMPLER slot 8 stop
+PAD9_Sampler+Shift,PAD9_Sampler+Shift,Pad,9038,8,10,12,14,9038,8,10,12,14,Fast,Grupo H - Pad 9 - SAMPLER slot 9 stop
+PAD10_Sampler+Shift,PAD10_Sampler+Shift,Pad,9039,8,10,12,14,9039,8,10,12,14,Fast,Grupo H - Pad 10 - SAMPLER slot 10 stop
+PAD11_Sampler+Shift,PAD11_Sampler+Shift,Pad,903A,8,10,12,14,903A,8,10,12,14,Fast,Grupo H - Pad 11 - SAMPLER slot 11 stop
+PAD12_Sampler+Shift,PAD12_Sampler+Shift,Pad,903B,8,10,12,14,903B,8,10,12,14,Fast,Grupo H - Pad 12 - SAMPLER slot 12 stop
+PAD13_Sampler+Shift,PAD13_Sampler+Shift,Pad,903C,8,10,12,14,903C,8,10,12,14,Fast,Grupo H - Pad 13 - SAMPLER slot 13 stop
+PAD14_Sampler+Shift,PAD14_Sampler+Shift,Pad,903D,8,10,12,14,903D,8,10,12,14,Fast,Grupo H - Pad 14 - SAMPLER slot 14 stop
+PAD15_Sampler+Shift,PAD15_Sampler+Shift,Pad,903E,8,10,12,14,903E,8,10,12,14,Fast,Grupo H - Pad 15 - SAMPLER slot 15 stop
+PAD16_Sampler+Shift,PAD16_Sampler+Shift,Pad,903F,8,10,12,14,903F,8,10,12,14,Fast,Grupo H - Pad 16 - SAMPLER slot 16 stop
+,,,,,,,,,,,,,,
+# Reservados - codigos listos pero sin asignar en la plantilla,,,,,,,,,,,,,,
+PAD9_HotCue,PAD9_HotCue,Pad,9008,7,9,11,13,9008,7,9,11,13,Fast,RESERVADO - HOT CUE 9
+PAD10_HotCue,PAD10_HotCue,Pad,9009,7,9,11,13,9009,7,9,11,13,Fast,RESERVADO - HOT CUE 10
+PAD11_HotCue,PAD11_HotCue,Pad,900A,7,9,11,13,900A,7,9,11,13,Fast,RESERVADO - HOT CUE 11
+PAD12_HotCue,PAD12_HotCue,Pad,900B,7,9,11,13,900B,7,9,11,13,Fast,RESERVADO - HOT CUE 12
+PAD13_HotCue,PAD13_HotCue,Pad,900C,7,9,11,13,900C,7,9,11,13,Fast,RESERVADO - HOT CUE 13
+PAD14_HotCue,PAD14_HotCue,Pad,900D,7,9,11,13,900D,7,9,11,13,Fast,RESERVADO - HOT CUE 14
+PAD15_HotCue,PAD15_HotCue,Pad,900E,7,9,11,13,900E,7,9,11,13,Fast,RESERVADO - HOT CUE 15
+PAD16_HotCue,PAD16_HotCue,Pad,900F,7,9,11,13,900F,7,9,11,13,Fast,RESERVADO - HOT CUE 16
+PAD9_PadFx1,PAD9_PadFx1,Pad,9018,7,9,11,13,9018,7,9,11,13,Fast,RESERVADO - PAD FX 1 slot 9
+PAD10_PadFx1,PAD10_PadFx1,Pad,9019,7,9,11,13,9019,7,9,11,13,Fast,RESERVADO - PAD FX 1 slot 10
+PAD11_PadFx1,PAD11_PadFx1,Pad,901A,7,9,11,13,901A,7,9,11,13,Fast,RESERVADO - PAD FX 1 slot 11
+PAD12_PadFx1,PAD12_PadFx1,Pad,901B,7,9,11,13,901B,7,9,11,13,Fast,RESERVADO - PAD FX 1 slot 12
+PAD13_PadFx1,PAD13_PadFx1,Pad,901C,7,9,11,13,901C,7,9,11,13,Fast,RESERVADO - PAD FX 1 slot 13
+PAD14_PadFx1,PAD14_PadFx1,Pad,901D,7,9,11,13,901D,7,9,11,13,Fast,RESERVADO - PAD FX 1 slot 14
+PAD15_PadFx1,PAD15_PadFx1,Pad,901E,7,9,11,13,901E,7,9,11,13,Fast,RESERVADO - PAD FX 1 slot 15
+PAD16_PadFx1,PAD16_PadFx1,Pad,901F,7,9,11,13,901F,7,9,11,13,Fast,RESERVADO - PAD FX 1 slot 16
+PAD1_Keyboard,PAD1_Keyboard,Pad,9040,7,9,11,13,9040,7,9,11,13,Fast,RESERVADO - KEYBOARD pad 1
+PAD2_Keyboard,PAD2_Keyboard,Pad,9041,7,9,11,13,9041,7,9,11,13,Fast,RESERVADO - KEYBOARD pad 2
+PAD3_Keyboard,PAD3_Keyboard,Pad,9042,7,9,11,13,9042,7,9,11,13,Fast,RESERVADO - KEYBOARD pad 3
+PAD4_Keyboard,PAD4_Keyboard,Pad,9043,7,9,11,13,9043,7,9,11,13,Fast,RESERVADO - KEYBOARD pad 4
+PAD5_Keyboard,PAD5_Keyboard,Pad,9044,7,9,11,13,9044,7,9,11,13,Fast,RESERVADO - KEYBOARD pad 5
+PAD6_Keyboard,PAD6_Keyboard,Pad,9045,7,9,11,13,9045,7,9,11,13,Fast,RESERVADO - KEYBOARD pad 6
+PAD7_Keyboard,PAD7_Keyboard,Pad,9046,7,9,11,13,9046,7,9,11,13,Fast,RESERVADO - KEYBOARD pad 7
+PAD8_Keyboard,PAD8_Keyboard,Pad,9047,7,9,11,13,9047,7,9,11,13,Fast,RESERVADO - KEYBOARD pad 8
+PAD1_KeyShift,PAD1_KeyShift,Pad,9070,7,9,11,13,9070,7,9,11,13,Fast,RESERVADO - KEY SHIFT pad 1
+PAD2_KeyShift,PAD2_KeyShift,Pad,9071,7,9,11,13,9071,7,9,11,13,Fast,RESERVADO - KEY SHIFT pad 2
+PAD3_KeyShift,PAD3_KeyShift,Pad,9072,7,9,11,13,9072,7,9,11,13,Fast,RESERVADO - KEY SHIFT pad 3
+PAD4_KeyShift,PAD4_KeyShift,Pad,9073,7,9,11,13,9073,7,9,11,13,Fast,RESERVADO - KEY SHIFT pad 4
+PAD5_KeyShift,PAD5_KeyShift,Pad,9074,7,9,11,13,9074,7,9,11,13,Fast,RESERVADO - KEY SHIFT pad 5
+PAD6_KeyShift,PAD6_KeyShift,Pad,9075,7,9,11,13,9075,7,9,11,13,Fast,RESERVADO - KEY SHIFT pad 6
+PAD7_KeyShift,PAD7_KeyShift,Pad,9076,7,9,11,13,9076,7,9,11,13,Fast,RESERVADO - KEY SHIFT pad 7
+PAD8_KeyShift,PAD8_KeyShift,Pad,9077,7,9,11,13,9077,7,9,11,13,Fast,RESERVADO - KEY SHIFT pad 8

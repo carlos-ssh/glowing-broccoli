@@ -1,0 +1,11 @@
+#!/bin/bash
+# Arranca el agente para el usuario que tiene la sesion abierta (si hay una).
+LABEL="io.github.carlos-ssh.maschine-mk1"
+PLIST="/Library/LaunchAgents/$LABEL.plist"
+USER_NAME=$(stat -f%Su /dev/console 2>/dev/null)
+if [ -n "$USER_NAME" ] && [ "$USER_NAME" != "root" ]; then
+    UID_N=$(id -u "$USER_NAME")
+    launchctl bootout "gui/$UID_N/$LABEL" 2>/dev/null
+    launchctl bootstrap "gui/$UID_N" "$PLIST" 2>/dev/null
+fi
+exit 0

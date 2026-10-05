@@ -14,7 +14,7 @@ Dos cosas en un repo:
 | `mk1read` (lee eventos del MK1) | Compila. Falta ejecutarlo con el kext de NI descargado. |
 | `mk1midi` (MK1 → puerto MIDI virtual) | Escrito y compilado. El puerto CoreMIDI está probado (`--selftest`). **La lectura del hardware no está probada**: falta ejecutarlo con el kext de NI descargado. |
 | LEDs y pantallas | **Pendiente.** Protocolo no documentado. |
-| Instalador `.pkg` | **Pendiente.** Se hará cuando funcione la fase 2. |
+| Instalador `.pkg` | Se construye y su contenido está comprobado. **No se ha instalado ni probado en un Mac.** Sin firmar. |
 
 ## 1. Mapeo para rekordbox
 
@@ -118,7 +118,26 @@ Los knobs del MK1 son potenciómetros sin fin de dos fases, por eso aquí sí se
 2. **Mapeo de rekordbox en el driver:** páginas de pads y de knobs (hoy las aplica Controller Editor), usando las tablas de `generador.py`.
 3. **LEDs:** capturar el tráfico del driver de NI para conocer el formato.
 4. **Pantallas:** protocolo no documentado (ingeniería inversa).
-5. **Instalador `.pkg`:** programa universal, LaunchAgent, puerto MIDI virtual y archivo de mapeo editable, con `pkgbuild` y `productbuild`. Sin cuenta de Apple Developer el paquete no está firmado ni notarizado: Gatekeeper pedirá abrirlo con clic derecho → Abrir.
+5. **Probar el `.pkg`** en un Mac con Sequoia, y añadir un archivo de mapeo editable.
+
+## 3. Instalador `.pkg`
+
+```bash
+cd packaging
+./build-pkg.sh            # genera build/MaschineMK1-0.1.0.pkg
+./build-pkg.sh 0.2.0      # otra versión
+SIGN_ID="Developer ID Installer: Nombre (TEAMID)" ./build-pkg.sh   # firmado
+```
+Instala `mk1midi` (binario universal) en `/usr/local/libexec/maschine-mk1/` y un LaunchAgent en `/Library/LaunchAgents/` que lo arranca al iniciar sesión y lo reintenta cada 10 s hasta que el MK1 esté conectado.
+
+- **Sin firmar:** el paquete no está firmado ni notarizado (hace falta una cuenta de Apple Developer). Gatekeeper pedirá abrirlo con clic derecho → Abrir, o desde Ajustes del Sistema → Privacidad y seguridad.
+- **Conflicto con NI:** si el Mac tiene el driver de NI instalado, el kext reclama el dispositivo y `mk1midi` no podrá abrirlo. Hay que quitar ese driver.
+- **Registro de errores:** `/tmp/maschine-mk1.log`.
+
+Desinstalar:
+```bash
+sudo /usr/local/libexec/maschine-mk1/uninstall.sh
+```
 
 ## Licencia
 MIT. El código del driver sigue el formato del protocolo documentado en el driver de Linux (GPL); `probe.c` y `mk1read.c` están escritos desde cero.

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>io.github.carlos-ssh.maschine-mk1</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/libexec/maschine-mk1/mk1midi</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <!-- mk1midi sale si no encuentra el MK1; se reintenta cada 10 s hasta que se conecte -->
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+    <key>ProcessType</key>
+    <string>Interactive</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/maschine-mk1.log</string>
+</dict>
+</plist>

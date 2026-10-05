@@ -12,7 +12,7 @@ Dos cosas en un repo:
 | Mapeo rekordbox (CSV + plantilla) | Generado y verificado internamente. Falta probarlo con el hardware. |
 | `probe` (lista descriptores USB) | Funciona. Compila universal. |
 | `mk1read` (lee eventos del MK1) | Compila. Falta ejecutarlo con el kext de NI descargado. |
-| Traducción a MIDI (CoreMIDI) | **Pendiente (fase 2).** |
+| `mk1midi` (MK1 → puerto MIDI virtual) | Escrito y compilado. El puerto CoreMIDI está probado (`--selftest`). **La lectura del hardware no está probada**: falta ejecutarlo con el kext de NI descargado. |
 | LEDs y pantallas | **Pendiente.** Protocolo no documentado. |
 | Instalador `.pkg` | **Pendiente.** Se hará cuando funcione la fase 2. |
 
@@ -66,6 +66,8 @@ cd driver
 clang -arch x86_64 -arch arm64 -o probe probe.c -framework IOKit -framework CoreFoundation
 clang -arch x86_64 -arch arm64 -Wno-deprecated-declarations -o mk1read mk1read.c \
       -framework IOKit -framework CoreFoundation
+clang -arch x86_64 -arch arm64 -Wno-deprecated-declarations -o mk1midi mk1midi.c \
+      -framework IOKit -framework CoreFoundation -framework CoreMIDI
 ```
 
 ### `probe`: ver los descriptores USB
@@ -91,11 +93,32 @@ Para recuperar el driver de NI: reinicia el Mac, o ejecuta
 sudo kextload /Library/Extensions/NIUSBMaschineController.kext
 ```
 
+### `mk1midi`: el MK1 como controlador MIDI (fase 2)
+Publica un puerto MIDI virtual llamado **Maschine MK1** que aparece en Ableton, rekordbox y cualquier software MIDI.
+```bash
+./mk1midi --selftest   # no necesita hardware: comprueba que CoreMIDI funciona
+./mk1midi --debug      # con el MK1 (kext de NI descargado): imprime cada evento
+./mk1midi              # modo normal
+```
+Mapeo MIDI por defecto:
+
+| Control | Mensaje |
+|---|---|
+| 16 pads | Canal 1, notas 36–51, velocity según la presión |
+| Botones (42) | Canal 2, nota = número de bit (0–41) |
+| Knobs K1–K8 | Canal 1, CC 20–27, **Relative** (1 = derecha, 127 = izquierda) |
+| VOLUME, TEMPO, SWING | Canal 1, CC 28–30, Relative |
+
+Los knobs del MK1 son potenciómetros sin fin de dos fases, por eso aquí sí se puede emitir Relative real. Las funciones de browse, zoom y loop que en Controller Editor no podían ir en knobs sí pueden usarlos con este driver.
+
+**Sin verificar con hardware:** el orden de los bits de botones, el orden físico de los knobs (K1 a K8), el número de cada pad y los umbrales de presión están tomados del driver de Linux. Ejecuta `./mk1midi --debug` y comprueba que cada control produce el evento esperado. Los nombres de botón con `?` en el código son dudosos (por ejemplo F1/F2 y PAGE ◄ ►).
+
 ### Qué falta
-1. **Fase 2:** traducir pads, botones y knobs a MIDI con CoreMIDI. Los knobs son potenciómetros sin fin de dos fases, así que el driver puede emitir Relative real.
-2. **LEDs:** capturar el tráfico del driver de NI para conocer el formato.
-3. **Pantallas:** protocolo no documentado (ingeniería inversa).
-4. **Instalador `.pkg`:** programa universal, LaunchAgent, puerto MIDI virtual y archivo de mapeo editable, con `pkgbuild` y `productbuild`. Sin cuenta de Apple Developer el paquete no está firmado ni notarizado: Gatekeeper pedirá abrirlo con clic derecho → Abrir.
+1. **Validar `mk1midi` con el MK1 real** y corregir los órdenes que no coincidan.
+2. **Mapeo de rekordbox en el driver:** páginas de pads y de knobs (hoy las aplica Controller Editor), usando las tablas de `generador.py`.
+3. **LEDs:** capturar el tráfico del driver de NI para conocer el formato.
+4. **Pantallas:** protocolo no documentado (ingeniería inversa).
+5. **Instalador `.pkg`:** programa universal, LaunchAgent, puerto MIDI virtual y archivo de mapeo editable, con `pkgbuild` y `productbuild`. Sin cuenta de Apple Developer el paquete no está firmado ni notarizado: Gatekeeper pedirá abrirlo con clic derecho → Abrir.
 
 ## Licencia
 MIT. El código del driver sigue el formato del protocolo documentado en el driver de Linux (GPL); `probe.c` y `mk1read.c` están escritos desde cero.
